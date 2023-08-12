@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css"
+     height="788px" preserveAspectRatio="none" style="width:808px;height:788px;background:#FFFFFF;" version="1.1"
+     viewBox="0 0 808 788" width="808px" zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <rect fill="#FFFFFF" height="121.873" style="stroke:#181818;stroke-width:1.0;" width="10" x="17.5"
+              y="116.9121"/>
+        <rect fill="#FFFFFF" height="76.582" style="stroke:#181818;stroke-width:1.0;" width="10" x="17.5" y="270.0762"/>
+        <rect fill="#FFFFFF" height="139.1641" style="stroke:#181818;stroke-width:1.0;" width="10" x="17.5"
+              y="377.9492"/>
+        <rect fill="#FFFFFF" height="139.1641" style="stroke:#181818;stroke-width:1.0;" width="10" x="17.5"
+              y="548.4043"/>
+        <rect fill="#FFFFFF" height="121.873" style="stroke:#181818;stroke-width:1.0;" width="10" x="284.5"
+              y="116.9121"/>
+        <rect fill="#FFFFFF" height="76.582" style="stroke:#181818;stroke-width:1.0;" width="10" x="284.5"
+              y="270.0762"/>
+        <rect fill="#FFFFFF" height="139.1641" style="stroke:#181818;stroke-width:1.0;" width="10" x="284.5"
+              y="377.9492"/>
+        <rect fill="#FFFFFF" height="139.1641" style="stroke:#181818;stroke-width:1.0;" width="10" x="284.5"
+              y="548.4043"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="22" x2="22" y1="83.6211"
+              y2="705.5684"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="289.5" x2="289.5" y1="83.6211"
+              y2="705.5684"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="539.5" x2="539.5" y1="83.6211"
+              y2="705.5684"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="697" x2="697" y1="83.6211"
+              y2="705.5684"/>
+        <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="771" x2="771" y1="83.6211"
+              y2="705.5684"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="5"
+              y="80.1074">User
+        </text>
+        <ellipse cx="22.5" cy="13.5" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/>
+        <path d="M22.5,21.5 L22.5,48.5 M9.5,29.5 L35.5,29.5 M22.5,48.5 L9.5,63.5 M22.5,48.5 L35.5,63.5 " fill="none"
+              style="stroke:#181818;stroke-width:0.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="5"
+              y="719.6758">User
+        </text>
+        <ellipse cx="22.5" cy="731.6895" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/>
+        <path d="M22.5,739.6895 L22.5,766.6895 M9.5,747.6895 L35.5,747.6895 M22.5,766.6895 L9.5,781.6895 M22.5,766.6895 L35.5,781.6895 "
+              fill="none" style="stroke:#181818;stroke-width:0.5;"/>
+        <rect fill="#E2E2F0" height="32.6211" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74"
+              x="252.5" y="50"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="259.5"
+              y="72.1074">Aplicativo
+        </text>
+        <rect fill="#E2E2F0" height="32.6211" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="74"
+              x="252.5" y="704.5684"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="259.5"
+              y="726.6758">Aplicativo
+        </text>
+        <rect fill="#E2E2F0" height="32.6211" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="66"
+              x="506.5" y="50"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="513.5"
+              y="72.1074">Console
+        </text>
+        <rect fill="#E2E2F0" height="32.6211" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="66"
+              x="506.5" y="704.5684"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="513.5"
+              y="726.6758">Console
+        </text>
+        <rect fill="#E2E2F0" height="32.6211" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="65"
+              x="665" y="50"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="672"
+              y="72.1074">Winston
+        </text>
+        <rect fill="#E2E2F0" height="32.6211" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="65"
+              x="665" y="704.5684"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="672"
+              y="726.6758">Winston
+        </text>
+        <rect fill="#E2E2F0" height="32.6211" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="62"
+              x="740" y="50"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="747"
+              y="72.1074">Morgan
+        </text>
+        <rect fill="#E2E2F0" height="32.6211" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="62"
+              x="740" y="704.5684"/>
+        <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="747"
+              y="726.6758">Morgan
+        </text>
+        <rect fill="#FFFFFF" height="121.873" style="stroke:#181818;stroke-width:1.0;" width="10" x="17.5"
+              y="116.9121"/>
+        <rect fill="#FFFFFF" height="76.582" style="stroke:#181818;stroke-width:1.0;" width="10" x="17.5" y="270.0762"/>
+        <rect fill="#FFFFFF" height="139.1641" style="stroke:#181818;stroke-width:1.0;" width="10" x="17.5"
+              y="377.9492"/>
+        <rect fill="#FFFFFF" height="139.1641" style="stroke:#181818;stroke-width:1.0;" width="10" x="17.5"
+              y="548.4043"/>
+        <rect fill="#FFFFFF" height="121.873" style="stroke:#181818;stroke-width:1.0;" width="10" x="284.5"
+              y="116.9121"/>
+        <rect fill="#FFFFFF" height="76.582" style="stroke:#181818;stroke-width:1.0;" width="10" x="284.5"
+              y="270.0762"/>
+        <rect fill="#FFFFFF" height="139.1641" style="stroke:#181818;stroke-width:1.0;" width="10" x="284.5"
+              y="377.9492"/>
+        <rect fill="#FFFFFF" height="139.1641" style="stroke:#181818;stroke-width:1.0;" width="10" x="284.5"
+              y="548.4043"/>
+        <polygon fill="#181818" points="272.5,112.9121,282.5,116.9121,272.5,120.9121,276.5,116.9121"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="27.5" x2="278.5" y1="116.9121" y2="116.9121"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="34.5"
+              y="111.6494">GET /hello-world
+        </text>
+        <polygon fill="#181818" points="759,144.2031,769,148.2031,759,152.2031,763,148.2031"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="294.5" x2="765" y1="148.2031" y2="148.2031"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="301.5"
+              y="142.9404">morganJsonFormat
+        </text>
+        <polygon fill="#181818" points="305.5,158.2031,295.5,162.2031,305.5,166.2031,301.5,162.2031"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="299.5" x2="770" y1="162.2031"
+              y2="162.2031"/>
+        <polygon fill="#181818" points="527.5,189.4941,537.5,193.4941,527.5,197.4941,531.5,193.4941"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="294.5" x2="533.5" y1="193.4941" y2="193.4941"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="221" x="301.5"
+              y="188.2314">request recebido: req.url = /hello-world
+        </text>
+        <polygon fill="#181818" points="305.5,203.4941,295.5,207.4941,305.5,211.4941,301.5,207.4941"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="299.5" x2="538.5" y1="207.4941"
+              y2="207.4941"/>
+        <polygon fill="#181818" points="33.5,234.7852,23.5,238.7852,33.5,242.7852,29.5,238.7852"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="27.5" x2="288.5" y1="238.7852"
+              y2="238.7852"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="39.5"
+              y="233.5225">Ol&#225;, Mundo!
+        </text>
+        <polygon fill="#181818" points="272.5,266.0762,282.5,270.0762,272.5,274.0762,276.5,270.0762"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="27.5" x2="278.5" y1="270.0762" y2="270.0762"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="34.5"
+              y="264.8135">GET /v2/hello-world
+        </text>
+        <polygon fill="#181818" points="759,297.3672,769,301.3672,759,305.3672,763,301.3672"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="294.5" x2="765" y1="301.3672" y2="301.3672"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="301.5"
+              y="296.1045">morganJsonFormat
+        </text>
+        <polygon fill="#181818" points="305.5,311.3672,295.5,315.3672,305.5,319.3672,301.5,315.3672"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="299.5" x2="770" y1="315.3672"
+              y2="315.3672"/>
+        <polygon fill="#181818" points="33.5,342.6582,23.5,346.6582,33.5,350.6582,29.5,346.6582"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="27.5" x2="288.5" y1="346.6582"
+              y2="346.6582"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="39.5"
+              y="341.3955">Ol&#225;, Mundo v2!
+        </text>
+        <polygon fill="#181818" points="272.5,373.9492,282.5,377.9492,272.5,381.9492,276.5,377.9492"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="27.5" x2="278.5" y1="377.9492" y2="377.9492"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="120" x="34.5"
+              y="372.6865">GET /v1/winston-test
+        </text>
+        <polygon fill="#181818" points="759,405.2402,769,409.2402,759,413.2402,763,409.2402"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="294.5" x2="765" y1="409.2402" y2="409.2402"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="301.5"
+              y="403.9775">morganJsonFormat
+        </text>
+        <polygon fill="#181818" points="305.5,419.2402,295.5,423.2402,305.5,427.2402,301.5,423.2402"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="299.5" x2="770" y1="423.2402"
+              y2="423.2402"/>
+        <polygon fill="#181818" points="685.5,450.5313,695.5,454.5313,685.5,458.5313,689.5,454.5313"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="294.5" x2="691.5" y1="454.5313" y2="454.5313"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="379" x="301.5"
+              y="449.2686">[correlation-id: ${correlationId}] Winston test log at ${requestTime}
+        </text>
+        <polygon fill="#181818" points="305.5,481.8223,295.5,485.8223,305.5,489.8223,301.5,485.8223"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="299.5" x2="696.5" y1="485.8223"
+              y2="485.8223"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="233" x="311.5"
+              y="480.5596">Requisi&#231;&#227;o recebida em: ${requestTime}
+        </text>
+        <polygon fill="#181818" points="33.5,513.1133,23.5,517.1133,33.5,521.1133,29.5,517.1133"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="27.5" x2="288.5" y1="517.1133"
+              y2="517.1133"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="233" x="39.5"
+              y="511.8506">Requisi&#231;&#227;o recebida em: ${requestTime}
+        </text>
+        <polygon fill="#181818" points="272.5,544.4043,282.5,548.4043,272.5,552.4043,276.5,548.4043"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="27.5" x2="278.5" y1="548.4043" y2="548.4043"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="120" x="34.5"
+              y="543.1416">GET /v2/winston-test
+        </text>
+        <polygon fill="#181818" points="759,575.6953,769,579.6953,759,583.6953,763,579.6953"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="294.5" x2="765" y1="579.6953" y2="579.6953"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="111" x="301.5"
+              y="574.4326">morganJsonFormat
+        </text>
+        <polygon fill="#181818" points="305.5,589.6953,295.5,593.6953,305.5,597.6953,301.5,593.6953"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="299.5" x2="770" y1="593.6953"
+              y2="593.6953"/>
+        <polygon fill="#181818" points="685.5,620.9863,695.5,624.9863,685.5,628.9863,689.5,624.9863"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;" x1="294.5" x2="691.5" y1="624.9863" y2="624.9863"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="301.5"
+              y="619.7236">Winston test log
+        </text>
+        <polygon fill="#181818" points="305.5,652.2773,295.5,656.2773,305.5,660.2773,301.5,656.2773"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="299.5" x2="696.5" y1="656.2773"
+              y2="656.2773"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="233" x="311.5"
+              y="651.0146">Requisi&#231;&#227;o recebida em: ${requestTime}
+        </text>
+        <polygon fill="#181818" points="33.5,683.5684,23.5,687.5684,33.5,691.5684,29.5,687.5684"
+                 style="stroke:#181818;stroke-width:1.0;"/>
+        <line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="27.5" x2="288.5" y1="687.5684"
+              y2="687.5684"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="233" x="39.5"
+              y="682.3057">Requisi&#231;&#227;o recebida em: ${requestTime}
+        </text><!--SRC=[pLB1IWGn3BttA-BWqN5nZmK54HM5HP0L3-AXjcKjT9gnxSmUP3z6FFWXysDsfXtPhXvaKV7KD7b9Nbx2k4SBDqvQGcfclUAgPiO3gsjW3ehZMYlEl6gnoE8SZKCj1yn9j7F0KXddqGo0ssZdW0hjWiNuR30BGdeUK1xrtIcSdyvXyYYrndA9LWl2UE31l8nqFtu1J7gw8I_MfEczT6ZEq5RCazIiZBL7U1g2WfLFZNG-l5m-A863Px-n6Wvp2kFOMQ5WzumeNEdkPGzcZH6uGuJC6AvzezgVPssdlpdkLooXdMv5z62Irblw8DlFBoPLft37qLgfmm66NafGs7rUyro8rJsauuAU2MXS0FC1bJOwLvLSaV4Mot6Awn1LJdLltIkEIsSWAxgPcIltxRIjTlz7acxgzU_KUGS0]-->
+    </g>
+</svg>

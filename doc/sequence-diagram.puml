@@ -1,0 +1,52 @@
+plantuml
+@startuml
+actor User
+
+participant app as "Aplicativo"
+participant console as "Console"
+participant winston as "Winston"
+participant morgan as "Morgan"
+
+User -> app: GET /hello-world
+activate User
+activate app
+app -> morgan: morganJsonFormat
+morgan --> app
+app -> console: request recebido: req.url = /hello-world
+console --> app
+app --> User: Olá, Mundo!
+deactivate app
+deactivate User
+
+User -> app: GET /v2/hello-world
+activate User
+activate app
+app -> morgan: morganJsonFormat
+morgan --> app
+app --> User: Olá, Mundo v2!
+deactivate app
+deactivate User
+
+User -> app: GET /v1/winston-test
+activate User
+activate app
+app -> morgan: morganJsonFormat
+morgan --> app
+app -> winston: [correlation-id: ${correlationId}] Winston test log at ${requestTime}
+winston --> app: Requisição recebida em: ${requestTime}
+app --> User: Requisição recebida em: ${requestTime}
+deactivate app
+deactivate User
+
+User -> app: GET /v2/winston-test
+activate User
+activate app
+app -> morgan: morganJsonFormat
+morgan --> app
+app -> winston: Winston test log
+winston --> app: Requisição recebida em: ${requestTime}
+app --> User: Requisição recebida em: ${requestTime}
+deactivate app
+deactivate User
+
+@enduml

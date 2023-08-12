@@ -2,8 +2,8 @@ const express = require('express');
 const morgan = require('morgan');
 const winston = require('winston');
 const correlationId = require('express-correlation-id');
-const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
+const swaggerAutogen = require('swagger-autogen')();
 
 const app = express();
 
@@ -40,86 +40,24 @@ const morganJsonFormat = (tokens, req, res) => {
 };
 app.use(morgan(morganJsonFormat));
 
-// Defina as opções para o swagger-jsdoc
-const options = {
-    definition: {
-        openapi: '3.0.0',
-        info: {
-            title: 'Nome da API',
-            version: '1.0.0',
-      description: 'Descrição da API'
-    }
-    },
-    // Caminho para os arquivos com as anotações dos endpoints
-  apis: ['./*.js']
-};
+// Define o caminho para os arquivos de definição dos endpoints
+const endpointsFiles = ['./server.js'];
 
-// Crie o objeto swagger-jsdoc
-const swaggerSpec = swaggerJSDoc(options);
+// Gera a especificação OpenAPI usando o swagger-autogen
+swaggerAutogen('./doc/swagger.json', endpointsFiles);
 
 // Rota para a documentação gerada pelo Swagger UI
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(require('./doc/swagger.json')));
 
-/**
- * @swagger
- * /hello-world:
- *   get:
- *     summary: Retorna uma mensagem de "Olá, Mundo!"
- *     responses:
- *       200:
- *         description: Sucesso
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 message:
- *                   type: string
- *                   example: Olá, Mundo!
- */
 app.get('/hello-world', (req, res) => {
     console.log(`request recebido: req.url = ${req.url}`);
     res.send('Olá, Mundo!');
 });
 
-/**
- * @swagger
- * /v2/hello-world:
- *   get:
- *     summary: Retorna uma mensagem de "Olá, Mundo v2!"
- *     responses:
- *       200:
- *         description: Sucesso
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 message:
- *                   type: string
- *                   example: Olá, Mundo v2!
- */
 app.get('/v2/hello-world', (req, res) => {
     res.send('Olá, Mundo v2!');
 });
 
-/**
- * @swagger
- * /v1/winston-test:
- *   get:
- *     summary: Teste do Winston
- *     responses:
- *       200:
- *         description: Sucesso
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 message:
- *                   type: string
- *                   example: Requisição recebida com sucesso
- */
 app.get('/v1/winston-test', (req, res) => {
     const requestTime = new Date().toISOString();
     const correlationId = req.correlationId();
@@ -127,23 +65,6 @@ app.get('/v1/winston-test', (req, res) => {
     res.send(`Requisição recebida em: ${requestTime}`);
 });
 
-/**
- * @swagger
- * /v2/winston-test:
- *   get:
- *     summary: Teste do Winston v2
- *     responses:
- *       200:
- *         description: Sucesso
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 message:
- *                   type: string
- *                   example: Requisição recebida com sucesso
- */
 app.get('/v2/winston-test', (req, res) => {
     const requestTime = new Date().toISOString();
     const correlationId = req.correlationId();

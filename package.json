@@ -1,6 +1,6 @@
 {
   "name": "meu-projeto-node",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "express-correlation-id": "^2.0.1",
     "express-openapi-validator": "^5.0.4",
     "morgan": "^1.10.0",
-    "swagger-jsdoc": "^6.2.8",
+    "swagger-autogen": "^2.23.5",
     "swagger-ui-express": "^5.0.0",
     "winston": "^3.10.0"
   },

@@ -5,6 +5,8 @@ const correlationId = require('express-correlation-id');
 const swaggerUi = require('swagger-ui-express');
 const swaggerAutogen = require('swagger-autogen')();
 
+require('@google-cloud/trace-agent').start();
+
 const app = express();
 
 // Configuração do Winston
@@ -43,13 +45,23 @@ app.use(morgan(morganJsonFormat));
 // Define o caminho para os arquivos de definição dos endpoints
 const endpointsFiles = ['./server.js'];
 
+const doc = {
+    info: {
+        title: "meu-projeto-node",
+        description: "Projeto utilizado no aprendizado de NodeJS + GCP + Trace + Logs",
+        version: packageInfo.version
+    },
+    host: process.env.SWAGGER_HOST || 'localhost:3001'
+};
+
 // Gera a especificação OpenAPI usando o swagger-autogen
-swaggerAutogen('./doc/swagger.json', endpointsFiles);
+swaggerAutogen('./doc/swagger.json', endpointsFiles, doc);
 
 // Rota para a documentação gerada pelo Swagger UI
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(require('./doc/swagger.json')));
 
 app.get('/hello-world', (req, res) => {
+    // #swagger.description = '"Olá, Mundo!" básico de qualquer tutorial.'
     console.log(`request recebido: req.url = ${req.url}`);
     res.send('Olá, Mundo!');
 });

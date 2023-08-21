@@ -4,6 +4,7 @@ const winston = require('winston');
 const correlationId = require('express-correlation-id');
 const swaggerUi = require('swagger-ui-express');
 const swaggerAutogen = require('swagger-autogen')();
+const packageInfo = require('./package.json');
 
 require('@google-cloud/trace-agent').start();
 

@@ -7,17 +7,18 @@
     "start": "node --require ./instrumentation.js server.js",
     "dev": "nodemon --require ./instrumentation-without-metrics.js server.js",
     "dev-metrics": "nodemon --require ./instrumentation.js server.js",
-    "swagger": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/opentelemetry-cloud-trace-exporter": "^2.1.0",
     "@opentelemetry/api": "^1.4.1",
     "@opentelemetry/auto-instrumentations-node": "^0.39.1",
     "@opentelemetry/sdk-metrics": "^1.15.2",
     "@opentelemetry/sdk-node": "^0.41.2",
+    "@opentelemetry/sdk-trace-base": "^1.15.2",
     "@opentelemetry/sdk-trace-node": "^1.15.2",
     "express": "^4.18.2",
     "express-correlation-id": "^2.0.1",
@@ -28,6 +29,7 @@
     "winston": "^3.10.0"
   },
   "devDependencies": {
+    "dotenv": "^16.3.1",
     "nodemon": "^3.0.1"
   }
 }

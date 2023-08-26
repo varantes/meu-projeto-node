@@ -1,12 +1,17 @@
-/*instrumentation.js*/
-// Require dependencies
-const {NodeSDK} = require('@opentelemetry/sdk-node');
-const {ConsoleSpanExporter} = require('@opentelemetry/sdk-trace-node');
-const {getNodeAutoInstrumentations,} = require('@opentelemetry/auto-instrumentations-node');
+const opentelemetry = require("@opentelemetry/api");
+const {NodeTracerProvider} = require("@opentelemetry/sdk-trace-node");
+const {SimpleSpanProcessor} = require("@opentelemetry/sdk-trace-base");
+const {TraceExporter,} = require("@google-cloud/opentelemetry-cloud-trace-exporter");
 
-const sdk = new NodeSDK({
-    traceExporter: new ConsoleSpanExporter(),
-    instrumentations: [getNodeAutoInstrumentations()],
-});
+// Enable OpenTelemetry exporters to export traces to Google Cloud Trace.
+// Exporters use Application Default Credentials (ADCs) to authenticate.
+// See https://developers.google.com/identity/protocols/application-default-credentials
+// for more details.
+const provider = new NodeTracerProvider();
 
-sdk.start();
+// Initialize the exporter. When your application is running on Google Cloud,
+// you don't need to provide auth credentials or a project id.
+const exporter = new TraceExporter();
+
+// Configure the span processor to send spans to the exporter
+provider.addSpanProcessor(new SimpleSpanProcessor(exporter));

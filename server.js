@@ -38,8 +38,10 @@ const app = express();
 app.use(correlationId());
 app.use(morgan(morganJsonFormat));
 
-generateSwagger().then(() => {
-    const swaggerData = require("./doc/swagger.json")
+
+const swaggerDocFile = "./doc/swagger.json";
+generateSwagger(swaggerDocFile).then(() => {
+    const swaggerData = require(swaggerDocFile)
     app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerData));
 })
 

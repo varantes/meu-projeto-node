@@ -7,14 +7,14 @@ const endpointsFiles = ['./server.js'];
 const doc = {
     info: {
         title: "meu-projeto-node",
-        description: "Projeto utilizado no aprendizado de NodeJS + GCP + Trace + Logs 2",
+        description: "Projeto utilizado no aprendizado de NodeJS + GCP + OTel + Trace + Logs",
         version: packageInfo.version
     },
     host: process.env.SWAGGER_HOST || 'localhost:3001'
 };
 
-function generateSwagger() {
-    return swaggerAutogen('./doc/swagger.json', endpointsFiles, doc)
+function generateSwagger(swaggerDocFile) {
+    return swaggerAutogen(swaggerDocFile, endpointsFiles, doc)
 }
 
 module.exports = generateSwagger;

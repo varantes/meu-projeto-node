@@ -1,6 +1,6 @@
 {
   "name": "meu-projeto-node",
-  "version": "1.1.11-trace",
+  "version": "1.1.12-trace",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "@opentelemetry/sdk-trace-node": "^1.15.2",
     "express": "^4.18.2",
     "express-correlation-id": "^2.0.1",
-    "express-openapi-validator": "^5.0.5",
+    "express-openapi-validator": "^5.0.6",
     "morgan": "^1.10.0",
     "swagger-autogen": "^2.23.5",
     "swagger-ui-express": "^5.0.0",

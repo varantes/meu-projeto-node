@@ -2,11 +2,8 @@ const express = require('express');
 const morgan = require('morgan');
 const winston = require('winston');
 const correlationId = require('express-correlation-id');
+const generateSwagger = require('./initializeSwagger');
 const swaggerUi = require('swagger-ui-express');
-const swaggerAutogen = require('swagger-autogen')();
-const packageInfo = require('./package.json');
-
-const app = express();
 
 // Configuração do Winston
 const logger = winston.createLogger({
@@ -23,9 +20,6 @@ const logger = winston.createLogger({
     ]
 });
 
-// Middleware para gerar correlation-id
-app.use(correlationId());
-
 // Configuração do Morgan para registrar com correlation-id
 morgan.token('correlation-id', function getId(req) {
     return req.correlationId();
@@ -39,25 +33,15 @@ const morganJsonFormat = (tokens, req, res) => {
         'response-time': tokens['response-time'](req, res) + 'ms'
     });
 };
+
+const app = express();
+app.use(correlationId());
 app.use(morgan(morganJsonFormat));
 
-// Define o caminho para os arquivos de definição dos endpoints
-const endpointsFiles = ['./server.js'];
-
-const doc = {
-    info: {
-        title: "meu-projeto-node",
-        description: "Projeto utilizado no aprendizado de NodeJS + GCP + Trace + Logs",
-        version: packageInfo.version
-    },
-    host: process.env.SWAGGER_HOST || 'localhost:3001'
-};
-
-// Gera a especificação OpenAPI usando o swagger-autogen
-swaggerAutogen('./doc/swagger.json', endpointsFiles, doc);
-
-// Rota para a documentação gerada pelo Swagger UI
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(require('./doc/swagger.json')));
+generateSwagger().then(() => {
+    const swaggerData = require("./doc/swagger.json")
+    app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerData));
+})
 
 app.get('/hello-world', (req, res) => {
     // #swagger.description = '"Olá, Mundo!" básico de qualquer tutorial.'

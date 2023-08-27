@@ -1,10 +1,10 @@
 {
   "name": "meu-projeto-node",
-  "version": "1.1.17-trace",
+  "version": "2.0.0-gcp-trace",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --require ./instrumentation-without-metrics.js server.js",
+    "start": "node --require ./server.js",
     "dev": "nodemon --require ./instrumentation-without-metrics.js server.js",
     "dev-metrics": "nodemon --require ./instrumentation.js server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,18 +13,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@google-cloud/opentelemetry-cloud-trace-exporter": "^2.1.0",
-    "@opentelemetry/api": "^1.4.1",
-    "@opentelemetry/auto-instrumentations-node": "^0.39.1",
-    "@opentelemetry/instrumentation-express": "^0.33.1",
-    "@opentelemetry/instrumentation-http": "^0.41.2",
-    "@opentelemetry/sdk-metrics": "^1.15.2",
-    "@opentelemetry/sdk-node": "^0.41.2",
-    "@opentelemetry/sdk-trace-base": "^1.15.2",
-    "@opentelemetry/sdk-trace-node": "^1.15.2",
+    "@google-cloud/trace-agent": "^7.1.2",
     "express": "^4.18.2",
     "express-correlation-id": "^2.0.1",
     "express-openapi-validator": "^5.0.6",
+    "got": "^10.7.0",
     "morgan": "^1.10.0",
     "swagger-autogen": "^2.23.5",
     "swagger-ui-express": "^5.0.0",

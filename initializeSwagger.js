@@ -2,7 +2,7 @@ const swaggerAutogen = require('swagger-autogen')();
 const packageInfo = require('./package.json');
 
 // Define o caminho para os arquivos de definição dos endpoints
-const endpointsFiles = ['./server.js'];
+const endpointsFiles = ['./server.js', './test-service.js'];
 
 const doc = {
     info: {

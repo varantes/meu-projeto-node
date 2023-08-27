@@ -1,10 +1,13 @@
 require('dotenv').config();
+require('./instrumentation-gcp');
+
 const express = require('express');
 const morgan = require('morgan');
 const winston = require('winston');
 const correlationId = require('express-correlation-id');
 const generateSwagger = require('./initializeSwagger');
 const swaggerUi = require('swagger-ui-express');
+const testRoute = require('./test-service');
 
 // Configuração do Winston
 const logger = winston.createLogger({
@@ -40,10 +43,13 @@ app.use(correlationId());
 app.use(morgan(morganJsonFormat));
 
 const swaggerDocFile = "./doc/swagger.json";
-generateSwagger(swaggerDocFile).then(() => {
-    const swaggerData = require(swaggerDocFile)
-    app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerData));
-})
+generateSwagger(swaggerDocFile)
+    .then((data) => {
+        console.log(data)
+        const swaggerData = require(swaggerDocFile)
+        app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerData));
+    })
+    .catch(reason => console.log(reason))
 
 app.get('/hello-world', (req, res) => {
     // #swagger.description = '"Olá, Mundo!" básico de qualquer tutorial.'
@@ -74,6 +80,8 @@ app.get('/v2/winston-test', (req, res) => {
 
     res.send(`Requisição recebida em: ${requestTime}`);
 });
+
+app.use('/', testRoute);
 
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');

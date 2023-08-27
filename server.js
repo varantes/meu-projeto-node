@@ -10,7 +10,7 @@ const swaggerUi = require('swagger-ui-express');
 const logger = winston.createLogger({
     level: 'info',
     format: winston.format.json(),
-    defaultMeta: {service: 'user-service'},
+    defaultMeta: {service: 'meu-projeto-node'},
     transports: [
         new winston.transports.Console({
             format: winston.format.combine(
@@ -39,7 +39,6 @@ const app = express();
 app.use(correlationId());
 app.use(morgan(morganJsonFormat));
 
-
 const swaggerDocFile = "./doc/swagger.json";
 generateSwagger(swaggerDocFile).then(() => {
     const swaggerData = require(swaggerDocFile)
@@ -59,7 +58,7 @@ app.get('/v2/hello-world', (req, res) => {
 app.get('/v1/winston-test', (req, res) => {
     const requestTime = new Date().toISOString();
     const correlationId = req.correlationId();
-    logger.info(`[correlation-id: ${correlationId}] Winston test log at ${requestTime}`);
+    logger.info(`[correlation-id: ${correlationId}] Winston test log V1 at ${requestTime}`);
     res.send(`Requisição recebida em: ${requestTime}`);
 });
 
@@ -67,10 +66,10 @@ app.get('/v2/winston-test', (req, res) => {
     const requestTime = new Date().toISOString();
     const correlationId = req.correlationId();
 
-    logger.info('Winston test log', {
+    logger.info('Winston test log V2.', {
         timestamp: requestTime,
-        correlationId: correlationId,
-        message: `Winston test log at ${requestTime}`
+        'correlation-id': correlationId,
+        message: `Executed at ${requestTime}`
     });
 
     res.send(`Requisição recebida em: ${requestTime}`);

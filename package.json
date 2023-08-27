@@ -1,10 +1,10 @@
 {
   "name": "meu-projeto-node",
-  "version": "1.1.13-trace",
+  "version": "1.1.17-trace",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --require ./instrumentation.js server.js",
+    "start": "node --require ./instrumentation-without-metrics.js server.js",
     "dev": "nodemon --require ./instrumentation-without-metrics.js server.js",
     "dev-metrics": "nodemon --require ./instrumentation.js server.js",
     "test": "echo \"Error: no test specified\" && exit 1"

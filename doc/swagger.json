@@ -2,8 +2,8 @@
   "swagger": "2.0",
   "info": {
     "title": "meu-projeto-node",
-    "description": "Projeto utilizado no aprendizado de NodeJS + GCP + OTel + Trace + Logs",
-    "version": "1.1.17-trace"
+    "description": "Projeto utilizado no aprendizado de NodeJS + GCP + Trace + Logs",
+    "version": "2.0.0-gcp-trace"
   },
   "host": "localhost:3000",
   "basePath": "/",
@@ -47,6 +47,19 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/postman-endpoint": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }

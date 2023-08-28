@@ -7,7 +7,7 @@ const endpointsFiles = ['./server.js', './test-service.js'];
 const doc = {
     info: {
         title: "meu-projeto-node",
-        description: "Projeto utilizado no aprendizado de NodeJS + GCP + OTel + Trace + Logs",
+        description: "Projeto utilizado no aprendizado de NodeJS + GCP + Trace + Logs",
         version: packageInfo.version
     },
     host: process.env.SWAGGER_HOST || 'localhost:3001'

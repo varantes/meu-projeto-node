@@ -45,7 +45,9 @@ app.use(morgan(morganJsonFormat));
 const swaggerDocFile = "./doc/swagger.json";
 generateSwagger(swaggerDocFile)
     .then((data) => {
-        console.log(data)
+        if (!data?.success) {
+            console.log(data)
+        }
         const swaggerData = require(swaggerDocFile)
         app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerData));
     })

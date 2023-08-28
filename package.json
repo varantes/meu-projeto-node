@@ -1,10 +1,10 @@
 {
   "name": "meu-projeto-node",
-  "version": "2.0.0-gcp-trace",
+  "version": "2.0.1-gcp-trace",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --require ./server.js",
+    "start": "node ./server.js",
     "dev": "nodemon --require ./instrumentation-without-metrics.js server.js",
     "dev-metrics": "nodemon --require ./instrumentation.js server.js",
     "test": "echo \"Error: no test specified\" && exit 1"

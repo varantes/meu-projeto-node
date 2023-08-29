@@ -8,6 +8,7 @@ const correlationId = require('express-correlation-id');
 const generateSwagger = require('./initializeSwagger');
 const swaggerUi = require('swagger-ui-express');
 const testRoute = require('./test-service');
+const path = require('path');
 
 // Configuração do Winston
 const { LoggingWinston } = require('@google-cloud/logging-winston');
@@ -85,6 +86,10 @@ app.get('/v2/winston-test', (req, res) => {
     });
 
     res.send(`Requisição recebida em: ${requestTime}`);
+});
+
+app.get('/swagger-json', (req, res) => {
+    res.sendFile(path.join(__dirname, 'doc', 'swagger.json'));
 });
 
 app.use('/', testRoute);

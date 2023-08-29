@@ -51,6 +51,16 @@
         }
       }
     },
+    "/swagger-json": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/postman-endpoint": {
       "get": {
         "description": "",

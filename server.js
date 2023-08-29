@@ -10,6 +10,9 @@ const swaggerUi = require('swagger-ui-express');
 const testRoute = require('./test-service');
 
 // Configuração do Winston
+const { LoggingWinston } = require('@google-cloud/logging-winston');
+const loggingWinston = new LoggingWinston();
+
 const logger = winston.createLogger({
     level: 'info',
     format: winston.format.json(),
@@ -20,7 +23,8 @@ const logger = winston.createLogger({
                 winston.format.timestamp(),
                 winston.format.json()
             )
-        })
+        }),
+        loggingWinston,
     ]
 });
 

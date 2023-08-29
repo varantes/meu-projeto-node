@@ -1,6 +1,6 @@
 {
   "name": "meu-projeto-node",
-  "version": "2.0.1-gcp-trace",
+  "version": "2.1.0-gcp-trace",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/logging-winston": "^6.0.0",
     "@google-cloud/trace-agent": "^7.1.2",
     "express": "^4.18.2",
     "express-correlation-id": "^2.0.1",

@@ -3,7 +3,7 @@
   "info": {
     "title": "meu-projeto-node",
     "description": "Projeto utilizado no aprendizado de NodeJS + GCP + Trace + Logs",
-    "version": "2.0.0-gcp-trace"
+    "version": "2.1.0-gcp-trace"
   },
   "host": "localhost:3000",
   "basePath": "/",
